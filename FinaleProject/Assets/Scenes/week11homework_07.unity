@@ -413,10 +413,11 @@ MonoBehaviour:
   Okay: 'I guess? '
   No1text: 'Great! Tu...what? But you always want a game! '
   No2text: 'Please, just try it once, I made it just for you! '
-  YayText: 'Great! Turn them all red in 3 minutes! '
+  YayText: 'Great! WASD to move the ball. Turn them all red in 1 minutes! '
   YayGame: 0
   no1: 0
   no2: 0
+  no3: 0
 --- !u!1 &1431711377
 GameObject:
   m_ObjectHideFlags: 0

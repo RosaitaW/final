@@ -1572,7 +1572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deltaTimerText: {fileID: 414326799}
-  deltaTimer: 180
+  deltaTimer: 60
 --- !u!114 &414326799
 MonoBehaviour:
   m_ObjectHideFlags: 0

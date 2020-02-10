@@ -287,10 +287,15 @@ MonoBehaviour:
   ExitGame: {fileID: 1361397075}
   Nogame: {fileID: 1763384701}
   StartButton: {fileID: 1987577877}
+  positionxmin: 1
+  positionxmax: 400
+  positionymin: 1
+  positionymax: 100
   nonono: 'Nope! '
   Start1: let's play
   Start2: a game
   Startfinal: YAY!
+  StartFinally: 'Game! ! ! '
   start: 0
   StarT: 0
   START: 0

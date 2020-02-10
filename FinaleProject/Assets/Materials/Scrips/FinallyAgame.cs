@@ -21,9 +21,11 @@ public class FinallyAgame : MonoBehaviour
     public bool YayGame = false;
     public bool no1 = false;
     public bool no2 = false;
+    //public bool no3 = false;
     // Start is called before the first frame update
 
-    public void Playgame() {
+    public void Playgame()
+    {
         if (!YayGame)
         {
             print("Yay! Play a Game!");
@@ -32,7 +34,8 @@ public class FinallyAgame : MonoBehaviour
             Object.Destroy(destroyNo);
             YayGame = true;
         }
-        else {
+        else
+        {
             print("Game started!");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
@@ -40,14 +43,15 @@ public class FinallyAgame : MonoBehaviour
     public void Iquit()
     {
         Object.Destroy(destroy);
-        if (!no1&&!no2)
+        if (!no1 && !no2)
         {
             print("Enough for game!");
             YouwinText.text = No1text;
             ButtonNoText.text = No1;
             no1 = true;
         }
-        else if (no1 && !no2) {
+        else if (no1 && !no2)
+        {
             print("I said no game!");
             YouwinText.text = No2text;
             ButtonNoText.text = No2;
@@ -58,26 +62,30 @@ public class FinallyAgame : MonoBehaviour
             print("Okay? ");
             YouwinText.text = YayText;
             ButtonNoText.text = Okay;
-            YayGame = true;
-            if (YayGame)
+            
+            if (!YayGame)
+            {
+                YayGame = true;
+            }
+            else
             {
                 print("Game started!");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
-        
-    }
-    public void Iquit2() {
+        /*else if (no1 && no2 && no3)
+        {
+            ButtonNoText.text =Yay;
+            if (!YayGame)
+            {
+                YayGame = true;
+            }
+            else
+            {
+                print("Game started!");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }*/
 
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
